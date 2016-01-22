@@ -32,7 +32,7 @@ def get_service(api_name, api_version, scope, key_file_location,
   f.close()
 
   credentials = SignedJwtAssertionCredentials(service_account_email, key,
-    scope=scope)
+    scope=scope, sub='mschultz@jaywolfe.com')
 
   http = credentials.authorize(httplib2.Http())
 

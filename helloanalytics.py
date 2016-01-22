@@ -32,7 +32,7 @@ def get_service(api_name, api_version, scope, key_file_location,
   f.close()
 
   credentials = SignedJwtAssertionCredentials(service_account_email, key,
-    scope=scope, sub='mschultz@jaywolfe.com')
+    scope=scope)
 
   http = credentials.authorize(httplib2.Http())
 
@@ -99,7 +99,7 @@ def main():
   # Use the developer console and replace the values with your
   # service account email and relative location of your key file.
   service_account_email = 'mschultz@complete-silo-118722.iam.gserviceaccount.com'
-  key_file_location = '8b6aa676d491.p12'
+  key_file_location = 'privatekey.pem'
 
   # Authenticate and construct service.
   service = get_service('analytics', 'v3', scope, key_file_location,

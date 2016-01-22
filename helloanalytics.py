@@ -99,7 +99,7 @@ def main():
   # Use the developer console and replace the values with your
   # service account email and relative location of your key file.
   service_account_email = 'mschultz@complete-silo-118722.iam.gserviceaccount.com'
-  key_file_location = '8b6aa676d4910364d0facb57692c89a2871b08ef'
+  key_file_location = './8b6aa676d491.p12'
 
   # Authenticate and construct service.
   service = get_service('analytics', 'v3', scope, key_file_location,

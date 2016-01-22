@@ -98,8 +98,8 @@ def main():
 
   # Use the developer console and replace the values with your
   # service account email and relative location of your key file.
-  service_account_email = '<Replace with your service account email address.>'
-  key_file_location = '<Replace with /path/to/generated/client_secrets.p12>'
+  service_account_email = 'mschultz@complete-silo-118722.iam.gserviceaccount.com'
+  key_file_location = '/usr/local/lib/python2.7/dist-packages/oauthclient/clientsecrets.py'
 
   # Authenticate and construct service.
   service = get_service('analytics', 'v3', scope, key_file_location,
